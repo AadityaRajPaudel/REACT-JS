@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  height: 30px;
+  list-style-type: none;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+ul > * {
+  background-color: black;
+  flex: 1;
+  border: 1px solid white;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial;
+  padding: 20px;
+  transition: background-color 0.2s, color 0.2s, border 0.2s, padding 0.2s;
+}
+ul>*:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  font-size: larger;
+}

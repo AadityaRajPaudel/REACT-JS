@@ -1,0 +1,8 @@
+1.
+  Why react? Because its more imperative(how the program does: complete steps/code given) than declarative(what the program does: more abstraction), meaning we dont need long JS code just to append an element that contains some content and its class name. (this takes 4 lines at min), whereas JSX allows this in single line through ReactDOM.render(html_content, destination)
+
+2.
+  ReactDOM is a global variable available by importing react-dom library
+
+3.
+  
