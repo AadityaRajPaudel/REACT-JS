@@ -43,3 +43,10 @@
   # App.jsx takes child components
 
 7. In summary, Node.js is the runtime that allows you to run JavaScript on the server, while Express.js is a framework that makes it easier to build web applications and APIs using Node.js. 
+
+8. Component composition is a fundamental concept in React that allows us to build complex UIs by combining smaller, independent components
+
+9. In index.css, main components of page are styled like body, button, etc (global styling)
+    In app.css, app.jsx components are styled (component styling)
+
+10. Just like a hardcoded function returns nothing but same result everytime, a react component also returns hard coded output if props are not used, meaning it will always give same return value as output which is non benifitial in dynamic output list like in youtube, airbnb, etc.
