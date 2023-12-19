@@ -1,3 +1,8 @@
+/*
+  import React from "react";
+  import ReactDOM from "react-dom/client"
+*/
+
 /* 
 ReactDOM.render(<p>This is a paragraph</p>, document.getElementById('root'))
 or
@@ -24,7 +29,7 @@ ReactDOM.render(
 // )
 
 /*
-  let elelemt = document.createElement('p');
+  let element = document.createElement('p');
   element.textcontent = 'this is a paragraph';
   element.className = 'header';
   document.getElementById('root').append(element);
@@ -46,3 +51,5 @@ ReactDOM.render(
   console.log(page);
   ReactDOM.render(page, document.getElementById('root'))
 */
+
+ReactDOM.render(<div>This is a div</div>, document.getElementById('root'));

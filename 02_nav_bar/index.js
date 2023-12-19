@@ -1,4 +1,4 @@
-function NavBar() {
+function NavBar() { // component
   return (
     <div>
       <h1>REACT-JS</h1>
@@ -16,7 +16,7 @@ function NavBar() {
 
 ReactDOM.render(
   <NavBar/>,
-  document.querySelector('.container')
+  document.querySelector('.root')
 )
 /*
   alternate way
@@ -32,5 +32,5 @@ ReactDOM.render(
     </nav>
   );
 
-  ReactDOM.render(navbar, document.querySelector('.container'))
+  ReactDOM.render(navbar, document.querySelector('.root'))
 */

@@ -1,8 +1,45 @@
 1.
-  Why react? Because its more imperative(how the program does: complete steps/code given) than declarative(what the program does: more abstraction), meaning we dont need long JS code just to append an element that contains some content and its class name. (this takes 4 lines at min), whereas JSX allows this in single line through ReactDOM.render(html_content, destination)
+  Why react? Because its less imperative(how the program does: complete steps/code given) and more declarative(what the program does: more abstraction), meaning we dont need long JS code just to append an element that contains some content and its class name. (this takes 4 lines at min), whereas JSX allows this in single line through ReactDOM.render(html_content, destination)
 
 2.
   ReactDOM is a global variable available by importing react-dom library
 
 3.
-  
+  function Element(){  // note capital E
+    return (
+      <div> Div </div>
+    )
+  }
+  ReactDOM.render(<Element/>, ...) // <Element/> --> calling or instantiating a component
+  A function that returns a react element is called component
+
+4.
+  JSX is a syntax extension of JS that allows us to write HTML code within JS code. It is more readable.
+
+5. 
+  Components return React elements (or return HTML elements or objects)
+  React components are aka UI.
+  React elements are normal objects in react representing a DOM element. Eg: const root = <h1> This is a DOM element </h1>
+  'root' is react element
+
+6. 
+  VITE:
+  Building React App gets much quicker with quick bundling time using esbuild. 
+  Unlike 
+    npx create-react-app
+    cd my-app
+    npm start
+  Vite uses:
+    npm create vite@latest
+    select name, framework, script type
+    npm install
+    npm run dev
+
+// newer version
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+  root.render(<App/>);
+
+  # main.jsx only displays the <App/>
+  # App.jsx takes child components
+
+7. In summary, Node.js is the runtime that allows you to run JavaScript on the server, while Express.js is a framework that makes it easier to build web applications and APIs using Node.js. 
