@@ -19,6 +19,7 @@ function App() {
       {/* But if we use component, and mention <Card/>, this would create multiple components by reusing code but this would be like a function that accepts parameters but always return same result no matter the parameters
       So we pass props to the component call to make sure calling a component with different props will lead to return of different elements from that called component.
       Props are custom values so they can be named any.
+      Card is a component in Card.jsx
       */}
       <Card 
         img = "source"

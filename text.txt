@@ -50,3 +50,18 @@
     In app.css, app.jsx components are styled (component styling)
 
 10. Just like a hardcoded function returns nothing but same result everytime, a react component also returns hard coded output if props are not used, meaning it will always give same return value as output which is non benifitial in dynamic output list like in youtube, airbnb, etc.
+
+11. destructuring props/objects
+  export default function Contact (props) {
+    // code eg. props.name;
+  }
+  let {name, email} = props; --> in name and email variables, props.name and props.email is stored. This is destructuring.
+  so we can import props as:
+  export default function Contact({name, phone, img, email}) {
+    // code eg. name
+  }
+
+12. to pass any other datatype values to props instead of string, we do
+  <Contact
+    prop = {10} or {true} or {[{}, {}, {}]} and so on
+  />
