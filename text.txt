@@ -65,3 +65,23 @@
   <Contact
     prop = {10} or {true} or {[{}, {}, {}]} and so on
   />
+
+13. import React from 'react';
+
+  const arrayOfComponents = [<Component1 />, <Component2 />, <Component3 />];
+
+  function App() {
+    return (
+      <div>
+        {arrayOfComponents}
+      </div>
+    );
+  }
+
+  export default App;
+
+  In this example, if arrayOfComponents is an array of React components, placing {arrayOfComponents} within the <div> will cause React to render each component in the array.
+
+14. While using .map() to map raw data from another file, all the Components stored in array must have an unique prop named 'key'.
+    This key prop will always have some unique value like 'id' as it is a part of a stored data.
+    Using this key as prop removes the warning in console
