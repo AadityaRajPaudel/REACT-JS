@@ -85,3 +85,37 @@
 14. While using .map() to map raw data from another file, all the Components stored in array must have an unique prop named 'key'.
     This key prop will always have some unique value like 'id' as it is a part of a stored data.
     Using this key as prop removes the warning in console
+
+15. props are immutable, meaning that they shouldn't be changed within a component body. The props passed to compenent can be changed during the component call but not inside the component definition itself.
+
+16. States are values that are defined within a component and can change.
+
+17. React.useState("Hello") ; returns an array with two items, string and function, string="Hello"
+
+18. Object destructuring
+
+  const person = {
+       img: "./images/mr-whiskerson.png",
+       name: "Mr. Whiskerson",
+       phone: "(800) 555-1234",
+       email: "mr.whiskaz@catnap.meow"
+   }
+
+   const {img, name} = person
+   console.log(name) -> Mr.Whiskerson
+
+  Array destructuring
+  const array = ["Aaditya", "Two", "abish"];
+  const [roll1, roll2, roll3] = array;
+
+19. Note: if you ever need the old value of state
+     * to help you determine the new value of state,
+     * you should pass a callback function to your
+     * state setter function instead of using
+     * state directly. This callback function will
+     * receive the old value of state as its parameter,
+     * which you can then use to determine your new
+     * value of state.
+
+20. Using states in child components from the props received from parent components is depricated. Those states are called derived states.
+  
