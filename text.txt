@@ -118,4 +118,27 @@
      * value of state.
 
 20. Using states in child components from the props received from parent components is depricated. Those states are called derived states.
-  
+  Rather use the function of parent component in child as props Eg in toggle div program
+
+21. ternary are used when we want to display one or the other thing, and && is used when we want to display a thing or nothing
+  using (true && jsx element) is standard format
+  ternary and && can be used directly in return statement of component, whereas if stateement for handling multiple condition based rendering should be done above the return in component
+
+22. to handle multiple form inputs, we save an object as state containing property names as input element's name property.
+  then a generalized function is made to handle the changes in the input field. Then any change in any field can update the state object containing all data of fields.
+  We should give a value attribute to input element eg: <input name="firstname" value = {formdata.firstname}/> to make sure its the state thats determining the input field value rather than the other way round.
+
+23. <input 
+        type="checkbox" 
+        id="isFriendly" 
+    />
+    <label htmlFor="isFriendly">Are you friendly?</label>
+
+    to make label and checkboxes associated with each other
+
+24. Checkbox has checked attribute that is a boolean, in state, its value is saved as boolean, like
+    eg: are you friendly? checkbox can have its state property name as 'isFriendly' and value as a bool 
+
+25. similarly radio has both checked(bool) and value(string) attributes in input tag on top of all other attributes.
+  <input type="radio" name="employee" value="part time" checked= {formData.employee === "part time"} />
+  <input type="radio" name="employee" value="full time" checked= {formData.employee === "full time"} />
