@@ -142,3 +142,6 @@
 25. similarly radio has both checked(bool) and value(string) attributes in input tag on top of all other attributes.
   <input type="radio" name="employee" value="part time" checked= {formData.employee === "part time"} />
   <input type="radio" name="employee" value="full time" checked= {formData.employee === "full time"} />
+
+26. React.useID()
+    event.preventDefault() -> used in sumbitting form, prevents refreshing of page and URL privacy

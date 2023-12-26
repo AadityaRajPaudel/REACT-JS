@@ -35,7 +35,7 @@ export default function App() {
   return (
     <form onSubmit={handleSubmit}>
 
-      <label htmlFor={id+"-firstname"}></label>
+      <label htmlFor={id+"-firstname"}>First Name</label>
       <input 
         id={id+"-firstname"}
         type="text" 
@@ -45,7 +45,7 @@ export default function App() {
         onChange={handleChange}
       />
 
-      <label htmlFor={id+"-lastname"}></label>
+      <label htmlFor={id+"-lastname"}>LastName</label>
       <input 
         id={id+"-lastname"}
         type="text" 
@@ -55,7 +55,7 @@ export default function App() {
         onChange={handleChange}
       />
 
-      <label htmlFor={id+"-email"}></label>
+      <label htmlFor={id+"-email"}>Email</label>
       <input 
         id={id+"-email"}
         type="email" 
@@ -65,7 +65,7 @@ export default function App() {
         onChange={handleChange}
       />
 
-      <label htmlFor={id+"-comment"}></label>
+      <label htmlFor={id+"-comment"}>Comment</label>
       <textarea
         id={id+"-comment"}
         placeholder="Enter some comments"
